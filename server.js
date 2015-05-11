@@ -4,8 +4,11 @@ var request = require('request');
 var cheerio = require('cheerio');
 var app = express();
 
+
+//This is the scraper
 app.get('/', function(req, res){
-  //All the web scraping magic is going to go here
+
+  //this is the r/hearthstone url that i am scraping
   url = 'http://www.reddit.com/r/hearthstone/top/#page=1/';
 
   request(url, function(error, response, html){
@@ -14,6 +17,12 @@ app.get('/', function(req, res){
 
       var title, link;
       var json = {title : "", link : ""};
+
+      //this is our entry point for data that
+      //contains each post info
+      $('p.title').filter(function(){
+
+      })
     }
   })
 })
