@@ -4,8 +4,8 @@ var request = require('request');
 var cheerio = require('cheerio');
 var app = express();
 
-
 //This is the scraper
+
 app.get('/', function(req, res){
 
   //this is the r/hearthstone url that i am scraping
