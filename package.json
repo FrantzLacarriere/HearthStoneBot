@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/FrantzLacarriere/HearthStoneBot",
   "dependencies": {
+    "cheerio": "latest",
     "express": "latest",
     "request": "latest",
-    "cheerio": "latest"
+    "twit": "^2.1.0"
   }
 }
